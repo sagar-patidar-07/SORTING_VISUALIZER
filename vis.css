@@ -1,0 +1,64 @@
+.navbar {
+    background-color: #087ce7;
+    color: #ffffff;
+    margin: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {  
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#input {
+    margin: 5px;
+    height: 40px;
+    width: 50%;
+}
+
+#array_input{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: firebrick;
+}
+
+#random_input {
+    width: 40%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: firebrick;
+}
+
+#no_of_swaps{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #087ce7;
+}
+
+#algo {
+    height: 50px;
+    width: 100%;
+    background-color: green;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width:90%;
+}
+
+i:hover {
+    color:rgb(151, 142, 142);
+}
+
+#about:hover {
+    text-decoration: underline;
+}

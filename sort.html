@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Sorting Visualizer</title>
+        <meta charset = "UTF-8" >
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+        <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="../SortingVisualizer/sort.js"></script>
+        <link rel = "stylesheet" href = "vis.css">
+    </head>
+    <body>
+        <div class = "navbar">
+            <span class = "navbar-brand mb-0">
+                <h3>Sorting Visualizer</h3>
+            </span>
+            &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; 
+   
+        </div>
+        <div >
+            <div class="card">
+                <img class="card-img" style="width:100%;height:350px;" src="image1.jpeg" alt="sorting image" >
+                <div class="card-img-overlay text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-12">
+                            <input type="text" name="number" placeholder="Enter any array here" id="input" required>
+                        
+                        &nbsp; &nbsp; &nbsp;
+                        <button onclick="getarray()" style="height:40px;width:70px;">
+                            Enter
+                        </button>
+                        &nbsp; &nbsp; &nbsp;
+                        <button onclick="getRandomarray()" style="height:40px;width: 130px;">
+                            Random Array
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p id="array_input"></p>
+            <div class="text-center">
+                <textarea id="random_input"></textarea>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <button id="algo" onclick=bubblesort()>
+                            Bubble Sort
+                        </button>
+                    </div>
+                    <div class="col-4 col-sm-4" onclick=insertionsort()>
+                        <button id="algo">
+                            Insertion Sort
+                        </button>
+                    </div>
+                    <div class="col-4 col-sm-4" onclick=selectionsort()>
+                        <button id="algo">
+                            Selection Sort
+                        </button>
+                    </div>
+                </div>
+                <br />
+                Speed of Simulation (from 100 to 3000 in miliseconds)
+                <br />
+                <input type="range" min="10" max="3000" value="50"  id="myRange">
+                <br />
+                <b><p id="no_of_swaps"></p></b>
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <canvas id="graph" style="border:1px solid #000000 ;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
